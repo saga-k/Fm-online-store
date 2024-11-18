@@ -1,0 +1,377 @@
+/*Page layout start-----------------------------------------------------------*/
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+/*Page layout*/
+main {
+  padding: 5%;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+}
+
+
+#cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*Page layout end-------------------------------------------------------------*/
+
+
+
+/*Card layout & styling start-------------------------------------------------*/
+
+.card {
+  flex: 1 1 230px;
+  max-width: 50%;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardImage {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cardImageMobile {
+  display: none;
+}
+
+.cardCategory {
+  font-size: 15px;
+  color: hsl(12, 20%, 44%);
+}
+
+.cardTitle {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.cardPrice {
+  font-weight: 500;
+  font-size: 18px;
+  color: hsl(14, 86%, 42%);
+}
+
+.addToCartButton {
+  height: 40px;
+  margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  border-radius: 20px;
+  border-color: hsl(14, 25%, 72%);
+  border-width: 1px;
+  border-style: solid;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: white;
+  font-weight: 500;
+}
+
+.activeButton {
+  color: white;
+  height: 40px;
+  margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  border-radius: 20px;
+  border: solid 1px hsl(14, 86%, 42%);
+  background-color: hsl(14, 86%, 42%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.activeButton p {
+  color: white;
+}
+
+
+.incrementIcon {
+  height: 15px;
+  width: 15px;
+  background-image: url(assets/images/icon-increment-quantity.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid white 1px;
+  border-radius: 50%;
+}
+
+.decrementIcon {
+  height: 15px;
+  width: 15px;
+  background-image: url(assets/images/icon-decrement-quantity.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid white 1px;
+  border-radius: 50%;
+}
+
+/*Card layout & styling end --------------------------------------------------*/
+
+
+
+/*Cart layout & styling start ------------------------------------------------*/
+
+#cartContainer {
+  background-color: white;
+  width: 20rem;
+  min-width: 20rem;
+  height: fit-content;
+  padding: 1.5rem;
+  border-radius: 10px;
+
+}
+
+#cartContainer h2 {
+  color: hsl(14, 86%, 42%);
+}
+
+/*Cart empty*/
+
+#emptyCart {
+
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#emptyCartIllustration {
+  width: 100px;
+}
+
+#emptyCart p {
+  font-size: 15px;
+  color: hsl(12, 20%, 44%);
+  font-weight: 500;
+  text-align: center;
+}
+
+/*Cart populated*/
+
+.cartItem {
+  border-bottom: 1px solid hsl(13, 31%, 94%);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cartItemTitle {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.cartItemPrices {
+  display: flex;
+  gap: 1rem;
+}
+
+.amount {
+  font-weight: 500;
+  color: hsl(14, 86%, 42%);
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.price,
+.totalPrice {
+  color: hsl(12, 20%, 44%);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.totalPrice {
+  font-weight: 500;
+}
+
+.removeIcon {
+  border: solid hsl(14, 25%, 72%);
+  width: 16px;
+  height: 16px;
+  background-image: url(assets/images/icon-remove-item.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+/*Cart foter*/
+
+#cartFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#orderTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#carbonNeutralBadge {
+  background-color: hsl(13, 31%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+#carbonNeutralBadge p {
+  font-size: 12px;
+}
+
+#confirmOrder {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: hsl(14, 86%, 42%);
+  color: hsl(20, 50%, 98%);
+}
+
+/*Cart layout & styling end --------------------------------------------------*/
+
+
+
+
+
+/*Overlay modal start---------------------------------------------------------*/
+#modalOverlay {
+  width: 100%;
+  height: 100%;
+  background-color: #3a3c326d;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#modal {
+  background-color: white;
+  width: 24rem;
+  height: fit-content;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+#confirmedContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.confirmItem {
+  display: flex;
+  gap: 1rem;
+}
+
+.confirmImage {
+  height: 4.5rem;
+  border-radius: 5px;
+}
+
+.confirmCenter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-grow: 1;
+}
+
+.confirmItemPrices {
+  align-items: flex-start;
+  display: flex;
+  gap: 1rem;
+}
+
+#continueShopping {
+  width: 100%;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: hsl(14, 86%, 42%);
+  color: hsl(20, 50%, 98%);
+}
+
+/*Overlay modal end-----------------------------------------------------------*/
+
+
+
+
+
+
+
+/*Responsive edits start------------------------------------------------------*/
+
+@media screen and (max-width: 932px) {
+  main {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .card {
+    max-width: 50%;
+  }
+
+  #cartContainer {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+
+  .card {
+    width: 100%;
+    max-width: none;
+  }
+
+  .cardImage {
+    display: none;
+  }
+
+  .cardImageMobile {
+    display: flex;
+    border-radius: 10px;
+  }
+
+  .addToCart {
+    margin-bottom: 5px;
+  }
+
+  #cards {
+    gap: 1.5rem;
+    border: none;
+  }
+
+  article {
+    border: none;
+  }
+}
+
+/*Responsive edits end--------------------------------------------------------*/

@@ -1,0 +1,55 @@
+body {
+  padding: 5%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.chartContainer {
+  background-color: white;
+  border: solid 1px hsl(14, 25%, 72%);
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+#salesPerDay {
+  width: 100%;
+  height: 35vw;
+  max-height: 400px;
+}
+
+#popularOrders {
+  width: 40vW;
+  height: 40vw;
+  max-width: 430px;
+  max-height: 430px;
+}
+
+#rowOneWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 3vw;
+  margin-bottom: 3vw;
+}
+
+#textBoxesWrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#totalNumberOfOrdersContainer {
+  height: 46%;
+}
+
+#totalRevenueContainer {
+  height: 46%;
+}
+
+h3 {
+  margin-bottom: 1.5rem;
+}
+
+#pieChartTitle {
+  margin-bottom: 1rem;
+}

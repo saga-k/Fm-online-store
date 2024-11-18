@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Dessert Nest | Sales</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg">
+
+  <!--Styling-->
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="sales.css">
+
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <h1>Sales statistics</h1>
+  <h3>The Dessert Nest</h3>
+  <div id="rowOneWrapper">
+    <div id=columnOneWrapper class="chartContainer">
+      <p id="pieChartTitle">Most popular orders</p>
+      <div id="popularOrders">
+        <canvas id="pieChart"></canvas>
+      </div>
+    </div>
+    <div id="textBoxesWrapper">
+      <div class="chartContainer" id="totalRevenueContainer">
+        <p>Total revenue</p>
+        <h1 id="totalRevenueCopy">0</h1>
+      </div>
+      <div class="chartContainer" id="totalNumberOfOrdersContainer">
+        <p>Total number of orders</p>
+        <h1 id="totalNumberOfOrdersCopy">0</h1>
+      </div>
+    </div>
+
+
+
+  </div>
+  </div>
+
+  <div id="salesPerDay" class="chartContainer">
+    <canvas id="lineChart"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="sales.js"></script>
+</body>
+
+</html>
