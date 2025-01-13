@@ -471,7 +471,7 @@ fetch('data.json')
 
           const order = JSON.stringify(body);
 
-          fetch('http://localhost:3000/orders', {
+          fetch('https://saga-k.github.io/Fm-online-store/data.json', {
             body: `${order}`,
             headers: { 'Content-type': 'application.json' },
             method: 'POST'
