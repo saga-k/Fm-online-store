@@ -1,6 +1,6 @@
 
 // Fetch data ------------------------------------------------------------------
-fetch('https://saga-k.github.io/Fm-online-store/data.json')
+fetch('http://localhost:3000/orders')
   .then(response => response.json())
   .then(ordersArr => {
 
