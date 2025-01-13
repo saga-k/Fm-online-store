@@ -206,7 +206,7 @@ fetch('data.json')
       const secondClass = decrementIcon.classList[1];
       const product = cartArr.find((product) => product.class === secondClass);
 
-      if (product.amount > 0) {
+      if (product && product.amount > 0) {
         product.amount -= 1;
       }
       updateButton();
@@ -441,10 +441,19 @@ fetch('data.json')
     //Render end----------------------------------------------------------------
 
 
-    //Eventlistener to POST-----------------------------------------------------
-    sendButton.addEventListener('click', postOrder);
+    //Eventlistener to POST()-----------------------------------------------------
+    sendButton.addEventListener('click', /*postOrder*/ closeModal);
+
+    function closeModal() {
+      confirmModal.style.display = 'none';
+      cartArr = [];
+      sessionStorage.clear();
+      location.reload();
+    }
 
     //Function to post order----------------------------------------------------
+    /* Commented away below code that posts order to json file, because it will not work on github pages.
+
     function postOrder() {
 
       let orderedCart = cartArr.filter((product) => product.amount > 0);
@@ -481,6 +490,7 @@ fetch('data.json')
         }
         )
     }
+    */
     //Post function end---------------------------------------------------------
 
 
