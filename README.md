@@ -31,8 +31,10 @@ Users should be able to:
 ### Screenshots
 
 ![Product List Screenshot](./assets/screenshots/productlist1.png)
+
 ![Product List Screenshot](./assets/screenshots/productlist2.png)
-![Product List Screenshot](.assets/screenshots/salesoverview.png)
+
+![Sales Overview Screenshot](./assets/screenshots/salesoverview.png)
 
 
 
