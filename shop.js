@@ -442,17 +442,11 @@ fetch('data.json')
 
 
     //Eventlistener to POST()-----------------------------------------------------
-    sendButton.addEventListener('click', /*postOrder*/ closeModal);
+    sendButton.addEventListener('click', postOrder);
 
-    function closeModal() {
-      confirmModal.style.display = 'none';
-      cartArr = [];
-      sessionStorage.clear();
-      location.reload();
-    }
 
     //Function to post order----------------------------------------------------
-    /* Commented away below code that posts order to json file, because it will not work on github pages.
+
 
     function postOrder() {
 
@@ -490,7 +484,7 @@ fetch('data.json')
         }
         )
     }
-    */
+
     //Post function end---------------------------------------------------------
 
 

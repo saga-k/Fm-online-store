@@ -78,6 +78,10 @@ main {
   gap: 0.5rem;
   background-color: white;
   font-weight: 500;
+
+  &:hover {
+    border-color: hsl(14, 86%, 42%);
+  }
 }
 
 .activeButton {
