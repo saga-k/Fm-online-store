@@ -28,9 +28,12 @@ Users should be able to:
 - The cart state is saved using web storage, and it will persist when the page is reloaded
 - Orders are sent to a local JSON file using JSON server and can be viewed on a separate page through Chart.js
 
-### Screenshot
+### Screenshots
 
-![Project Screenshot](./screenshot.jpg)
+![Product List Screenshot](./assets/screenshots/productlist1.png)
+![Product List Screenshot](./assets/screenshots/productlist2.png)
+![Product List Screenshot](.assets/screenshots/salesoverview.png)
+
 
 
 
